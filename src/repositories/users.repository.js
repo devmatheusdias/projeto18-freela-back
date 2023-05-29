@@ -1,6 +1,6 @@
 import { db } from '../database/database.connection.js';
 
-export async function getFollowers(res){
+export async function getUsers(res){
 
     const users = await db.query(`
         SELECT * FROM users
